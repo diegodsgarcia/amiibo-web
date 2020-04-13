@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './style.css';
+import React, { useState, useEffect } from 'react'
+import './style.css'
 
 const url = 'https://www.amiiboapi.com/api/amiibo'
 
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
