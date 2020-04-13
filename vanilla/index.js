@@ -16,7 +16,7 @@ function createListItem({ name, image, amiiboSeries, release }) {
   const item = document.createElement('li')
   item.className = 'item'
   item.innerHTML = `
-    <img src="${image}" />
+    <img src="${image}" alt=${name} title=${name} />
     <div class="item-description">
       <h2 class="item-name">${name}</h2>
       <p>Game Serie: ${amiiboSeries}</p>
