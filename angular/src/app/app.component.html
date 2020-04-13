@@ -1,0 +1,13 @@
+<main>
+  <h1 class="title">Amiibos</h1>
+  <ul class="list">
+    <li *ngFor="let amiibo of (amiibos | async)" class="item">
+      <img [src]="amiibo.image" [alt]="amiibo.name" [title]="amiibo.name" />
+      <div class="item-description">
+        <h2 class="item-name">{{ amiibo.name }}</h2>
+        <p>Game Serie: {{ amiibo.amiiboSeries }}</p>
+        <p>Release: {{amiibo.release.eu || amiibo.release.jp || amiibo.release.na || amiibo.release.au}}</p>
+      </div>
+    </li>
+  </ul>
+</main>
